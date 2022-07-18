@@ -7,10 +7,10 @@ let handler = async(m, { conn }) => {
     let vcard = `
 BEGIN:VCARD
 VERSION:3.0
-N:;Fadli;;;
-FN:Fadli
+N:;kevin;;;
+FN:kevin
 TEL;type=CELL;type=VOICE;waid=${nomor}:${PhoneNumber('+' + nomor).getNumber('international')}
-X-WA-BIZ-NAME:Fadli
+X-WA-BIZ-NAME:kevin
 X-WA-BIZ-DESCRIPTION:${biz.description.replace(/\n/g, '\\n')}
 END:VCARD
     `.trim()
