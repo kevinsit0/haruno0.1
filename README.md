@@ -28,8 +28,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/FadliDarmawan/haruno-md
-cd haruno-md
+git clone https://github.com/kevinsit0/haruno0.1
+cd haruno0.1
 yarn
 npm i -g typescript
 tsc -p ./node_modules/@adiwajshing/baileys
