@@ -188,9 +188,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
       const sections = [
             {
               "rows": [{
-              "title": "Informasi Bot"
-            }, {
-              "rows": [{
                 "title": `Toda la lista`,
                 "description": "Menú Todos los comandos",
                 "rowId": `${_p}? all`
