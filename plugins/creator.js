@@ -1,25 +1,10 @@
-import PhoneNumber from 'awesome-phonenumber'
-let handler = async(m, { conn }) => {
-    let nomor = owner[0][0]
-    let number = nomor + '@s.whatsapp.net'
-    let biz = await conn.getBusinessProfile(number)
-
-    let vcard = `
-BEGIN:VCARD
-VERSION:3.0
-N:;Fadli;;;
-FN:Fadli
-TEL;type=CELL;type=VOICE;waid=${nomor}:${PhoneNumber('+' + nomor).getNumber('international')}
-X-WA-BIZ-NAME:Fadli
-X-WA-BIZ-DESCRIPTION:${biz.description.replace(/\n/g, '\\n')}
-END:VCARD
-    `.trim()
-    let kont = await conn.sendMessage(m.chat, { contacts: { displayName: 'Fadli', contacts: [{vcard}]}}, { quoted: m})
-    conn.reply(m.chat,'',kont)
+let handler = function (m) {
+  // this.sendContact(m.chat, '593 96 416 3489', '🐉Kevin💎', m)
+  this.sendContact(m.chat, '593964163489', '🐉Kevin💎', m)
 }
-handler.help = ['owner', 'creator']
+handler.help = ['owner', 'creador']
 handler.tags = ['info']
 
-handler.command = /^(owner|creator)$/i
+handler.command = /^(owner|creador)$/i
 
-export default handler
+module.exports = handler
