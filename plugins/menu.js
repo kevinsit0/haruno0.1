@@ -188,8 +188,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
       const sections = [
             {
               "rows": [{
-                "title": `Pemilik Bot`,
-                "description": "Nomor Pemilik Bot (owner)",
+                "title": `propietario del Bot`,
+                "description": "Numero del propietario del Bot (owner)",
                 "rowId": `${_p}creator`
               }, {
                 "title": "Syarat Ketentuan dan Peraturan",
