@@ -581,21 +581,21 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'This command only can used by _*Owner!*_\nPerintah ini hanya dapat digunakan oleh _*Owner!*_',
-        owner: 'This command only can used by _*Owner!*_\nPerintah ini hanya dapat digunakan oleh _*Owner!*_',
-        mods: 'This command only can used by _*Moderator!*_\nPerintah ini hanya dapat digunakan oleh _*Moderator!*_',
+        rowner: '*[ ⚠ ️] Este comando solo puede ser utilizado por el propietario/owner del Bot*',
+        owner: '*[ ⚠ ️] Este comando solo puede ser utilizado por sub Bots (jadibot/serbot) y el propietario*',
+        mods: 'Este comando solo puede ser utilizado por _*Moderator*_ !',
         premium: 'This command only can used by _*Premium Users.*_\nPerintah ini hanya dapat digunakan oleh _*User Premium.*_',
         group: 'This command only can used in Group.\nPerintah ini hanya dapat digunakan di Group.',
         private: 'This command only can used in Private Chat.\nPerintah ini hanya dapat digunakan di Chat Pribadi.',
-        admin: 'This command only can used by *Group Admin.*\nPerintah ini hanya dapat digunakan oleh *Admin Group.*',
-        botAdmin: 'Make the bot number as a group admin to use this command.\nJadikan bot sebagai admin untuk menggunakan perintah ini.',
+        admin: '*[ ⚠ ️]️ Este comando es solo para administradores del grupo*',
+        botAdmin: 'Haga del bot un *Admin* para usar este comando!',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Haruno.19*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
 }
 
-let file = global.__filename(import.meta.url, true)
+let file = global.__filename(import.meta.url, true
 watchFile(file, async () => {
     unwatchFile(file)
     console.log(chalk.redBright("Update 'handler.js'"))
