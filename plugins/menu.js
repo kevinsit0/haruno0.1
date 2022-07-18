@@ -8,14 +8,14 @@ import moment from 'moment-timezone'
 const defaultMenu = {
   before: `
 ┌──「 *%me* 」
-├ Hai, *%name!*
+├ Hola, *%name!*
 ├ %time
 │
 ├ *%watermark*
 └───
 
-*Group Official*:
-\`\`\`https://chat.whatsapp.com/Dqdjz7aSWJj0IyORAsdYom\`\`\`
+*Instagram*:
+\`\`\`https://instagram.com/kevinsito.593\`\`\`
 
 Jika ingin memasukkan bot kedalam group, ketik command:
 *.join <link group mu>*
@@ -373,8 +373,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
           ]
           const listMessage = {
             title: `${ucapan()}, ${name}`.trim(),
-            text: "Berikut ini adalah daftar menu Haruno Bot.",
-            footer: "Silahkan tekan tombol \"Click Here\" untuk melihat sub-menu Haruno Bot.\n\nJika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.\n\n*Group Official*: \`\`\`https://chat.whatsapp.com/Dqdjz7aSWJj0IyORAsdYom\`\`\`",
+            text: "_la siguientees una lista del menu._",
             buttonText: "Click Here",
             sections
         }
