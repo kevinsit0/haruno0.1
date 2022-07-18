@@ -15,7 +15,7 @@ X-WA-BIZ-DESCRIPTION:${biz.description.replace(/\n/g, '\\n')}
 END:VCARD
     `.trim()
     let kont = await conn.sendMessage(m.chat, { contacts: { displayName: 'Fadli', contacts: [{vcard}]}}, { quoted: m})
-    conn.reply(m.chat, )
+    conn.reply(m.chat,'',kont)
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
