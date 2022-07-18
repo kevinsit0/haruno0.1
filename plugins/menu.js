@@ -192,10 +192,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
                 "description": "Numero del propietario del Bot (owner)",
                 "rowId": `${_p}creator`
               }, {
-                "title": "Syarat Ketentuan dan Peraturan",
-                "description": "Harap membaca Peraturan demi kenyamanan kita bersama",
-                "rowId": `${_p}rules`
-              }, {
                 "title": "Group Official Harunobot",
                 "description": "Gabung untuk mendapatkan informasi mengenai bot atau sekedar meramaikan",
                 "rowId": `${_p}harunoff`
