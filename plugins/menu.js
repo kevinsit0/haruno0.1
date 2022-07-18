@@ -464,19 +464,19 @@ function clockString(ms) {
 }
 
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Selamat dinihari"
+  const time = moment.tz('Ecuador\Guayaquil').format('HH')
+  let res = "buenos dias"
   if (time >= 4) { 
-    res = "Ohayou!"
+    res = "hola!"
   }
   if (time > 10) {
-    res = "Konnichiwa!"
+    res = "buenas tardes!"
   }
   if (time >= 15) {
-    res = "Konnichiwa!"
+    res = "buenas tardes!"
   }
   if (time >= 18) {
-    res = "Konbanwa!"
+    res = "buenas noches!"
   }
   return res
 }
