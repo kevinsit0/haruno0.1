@@ -188,19 +188,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
       const sections = [
             {
               "rows": [{
-                "title": `propietario del Bot`,
-                "description": "Numero del propietario del Bot (owner)",
-                "rowId": `${_p}creator`
-              }, {
-                "title": "Group Official Harunobot",
-                "description": "Gabung untuk mendapatkan informasi mengenai bot atau sekedar meramaikan",
-                "rowId": `${_p}harunoff`
-              }],
               "title": "Informasi Bot"
             }, {
               "rows": [{
-                "title": `Semua Perintah`,
-                "description": "Menu Semua Perintah",
+                "title": `Toda la lista`,
+                "description": "Menú Todos los comandos",
                 "rowId": `${_p}? all`
                 }],
               "title": "─────「 1 」"
