@@ -3,7 +3,9 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['593960841123', 'kevin', true],
+  ['628112958665', 'Fadli', true],
+  ['6288215569001', 'Zaki', true],
+  ['628998512588', 'Rafli', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -34,8 +36,8 @@ global.author = 'Fadli'
 // Haruno global
 global.image = 'https://telegra.ph/file/0eb764fc1b4fd2bc2b968.jpg'
 global.watermark = '© Haruno'
-global.wait = '「 ⏱️ 」Harap tunggu...'
-global.multiplier = 59 // The higher, The harder levelup
+global.wait = '「 ⏱️ 」Espere por favor...'
+global.multiplier = 59 // Cuanto más alto, más difícil subir de nivel
 global.source = 'https://youtu.be/pgCNibhSYsY'
 global.pic =  ['https://telegra.ph/file/f96d9fdebba8eaa08ba7b.jpg', 'https://telegra.ph/file/67ae7747903d9b45a7427.jpg', 'https://telegra.ph/file/5d8c2f2797cb067ef887c.jpg', 'https://telegra.ph/file/07f09ce47a07c187b1d79.jpg', 'https://telegra.ph/file/456bdf2f852674b3fdb18.jpg', 'https://telegra.ph/file/96bfbbe091aa5523c7150.jpg', 'https://telegra.ph/file/7644617a4ad58d8d6f0e2.jpg']
 
