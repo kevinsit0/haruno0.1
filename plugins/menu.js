@@ -449,7 +449,7 @@ function clockString(ms) {
 }
 
 function ucapan() {
-  const time = moment.tz('Ecuador\Guayaquil').format('HH')
+  const time = moment.tz('América\Guayaquil').format('HH')
   let res = "buenos dias"
   if (time >= 4) { 
     res = "hola!"
