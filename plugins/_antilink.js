@@ -1,22 +1,24 @@
-let handler = m => m
+// import db from '../lib/database.js'
 
-let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
-handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
-  if ((m.isBaileys && m.fromMe) || m.fromMe || !m.isGroup) return true
-  let chat = global.DATABASE.data.chats[m.chat]
-  let isGroupLink = linkRegex.exec(m.text)
+const linkRegex = /chat.whatsapp.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i
 
-  if (chat.antiLink && isGroupLink) {
-    await m.reply(`*「 ANTI LINKS 」*\n*Hasta la vista baby👋, ${await this.getName(m.sender)} rompiste las reglas serás exterminado....!!*`)
-    if (isAdmin) return m.reply('*Te salvaste cagon(a) eres admin, no puedo eliminarte :v*')
-    if (!isBotAdmin) return m.reply('*El bot no es admin, no puede exterminar a las personas*')
-    let linkGC = ('https://chat.whatsapp.com/' + await this.groupInviteCode(m.chat))
-    let isLinkThisGc = new RegExp(linkGC, 'i')
-    let isgclink = isLinkThisGc.test(m.text)
-    if (isgclink) return m.reply('*Lol.. enviaste el enlace de este grupo :v*')
-    await this.groupRemove(m.chat, [m.sender])
-  }
-  return true
+export async function before(m, { isAdmin, isBotAdmin }) {
+    if (m.isBaileys && m.fromMe)
+        return !0
+    if (!m.isGroup) return !1
+    let chat = db.data.chats[m.chat]
+    let bot = db.data.settings[this.user.jid] || {}
+    const isGroupLink = linkRegex.exec(m.text)
+
+    if (chat.antiLink && isGroupLink && !isAdmin) {
+        if (isBotAdmin) {
+            const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
+            if (m.text.includes(linkThisGroup)) return !0
+        }
+        await conn.sendButton(m.chat, `*Group link terdeteksi!*${isBotAdmin ? '\n\nMatikan antilink?' : '\n\nBot bukan admin...'}`, watermark, ['Disable antilink', '/disable antilink'], m)
+        if (isBotAdmin && bot.restrict) {
+            await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+        } else if (!bot.restrict) return m.reply('Owner disable auto kick!')
+    }
+    return !0
 }
-
-module.exports = handler
