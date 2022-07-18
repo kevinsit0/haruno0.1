@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['628112958665', 'Fadli', true],
+  ['593960841123', 'kevin', true],
   ['6288215569001', 'Zaki', true],
   ['628998512588', 'Rafli', true]
   // [number, dia creator/owner?, dia developer?]
@@ -31,7 +31,7 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.packname = 'Haruno'
-global.author = 'Fadli'
+global.author = 'kevin'
 
 // Haruno global
 global.image = 'https://telegra.ph/file/0eb764fc1b4fd2bc2b968.jpg'
