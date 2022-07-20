@@ -22,11 +22,13 @@ Donate me via [`Saweria!`](https://saweria.co/FadliStudio)
 
 ## FOR TERMUX USER
 ```bash
-pkg update && pkg upgrade
-pkg install git
-pkg install nodejs
-pkg install ffmpeg
-pkg install imagemagick
+termux-setup-storage
+apt update
+pkg upgrade
+pkg install git -y
+pkg install nodejs -y
+pkg install ffmpeg -y
+pkg install imagemagick -y
 pkg install yarn
 git clone https://github.com/kevinsit0/haruno0.1
 cd haruno0.1
