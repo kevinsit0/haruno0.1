@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         }
       } else if (!isAdmin) {
         global.dfail('admin', m, conn)
-        throw false
+        throw true
       }
       chat.welcome = isEnable
       break
