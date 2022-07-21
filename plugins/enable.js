@@ -182,7 +182,7 @@ ${usedPrefix}disable welcome
       throw false
   }
   m.reply(`
-*${type}* Está funcion *${isActivar ? 'fue ' : 'activada'}kan* ${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}
+*${type}* Está funcion fue *${isActivar ? 'activada' : 'desactivada' *${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}
 `.trim())
 }
 handler.help = ['activar', 'desactivar'].map(v => v + 'able <option>')
