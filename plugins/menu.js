@@ -17,8 +17,6 @@ const defaultMenu = {
 *Instagram*:
 \`\`\`https://instagram.com/kevinsito.593\`\`\`
 
-Jika ingin memasukkan bot kedalam group, ketik command:
-*.join <link group mu>*
 %readmore`.trimStart(),
   header: '┌──「 %category 」',
   body: '├ %cmd %islimit %isPremium',
@@ -196,38 +194,31 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
             }, {
               "rows": [{
                 "title": `Game`,
-                "description": "Menu untuk Game",
+                "description": "Menú para juegos",
                 "rowId": `${_p}? game`
               }],
               "title": "─────「 2 」"
             }, {
               "rows": [{
                 "title": `XP`,
-                "description": "Menu untuk XP",
+                "description": "Menú para XP",
                 "rowId": `${_p}? xp`
               }],
               "title": "─────「 3 」"
             }, {
               "rows": [{
                 "title": `Sticker`,
-                "description": "Menu untuk Sticker",
+                "description": "Menú para Sticker",
                 "rowId": `${_p}? stiker`
               }],
               "title": "─────「 4 」"
             }, {
               "rows": [{
                 "title": `Anime`,
-                "description": "Some anime, manga, doujinshi stuff...",
+                "description": "Anime teñido, manga, douujinshi stsuf. .. ..",
                 "rowId": `${_p}? anime`
               }],
               "title": "─────「 5 」"
-            }, {
-              "rows": [{
-                "title": `Kerang Ajaib`,
-                "description": "Puja kerang ajaib...",
-                "rowId": `${_p}? kerangajaib`
-              }],
-              "title": "─────「 6 」"
             }, {
               "rows": [{
                 "title": `Quotes`,
@@ -238,21 +229,21 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
             }, {
               "rows": [{
                 "title": `Admin`,
-                "description": "Menu untuk Admin",
+                "description": "Menú para Admins",
                 "rowId": `${_p}? admin`
               }],
               "title": "─────「 8 」"
             }, {
               "rows": [{
                 "title": `Grup`,
-                "description": "Menu untuk Group",
+                "description": "Menú para Grupo",
                 "rowId": `${_p}? group`
               }],
               "title": "─────「 9 」"
             }, {
               "rows": [{
                 "title": `Premium`,
-                "description": "Menu untuk Premium Users",
+                "description": "Menú para Usuarios Premium",
                 "rowId": `${_p}? premium`
               }],
               "title": "─────「 10 」"
@@ -322,7 +313,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
             }, {
               "rows": [{
                 "title": `Pengubah Suara`,
-                "description": "Menu Pengubah Suara",
+                "description": "Menú de cambiador de voz",
                 "rowId": `${_p}? audio`
               }],
               "title": "─────「 20 」"
@@ -336,21 +327,21 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
             }, {
               "rows": [{
                 "title": `Info`,
-                "description": "Menu untuk Info",
+                "description": "Menú de Información",
                 "rowId": `${_p}? info`
               }],
               "title": "─────「 22 」"
             }, {
               "rows": [{
                 "title": `Tanpa Kategori`,
-                "description": "Menu Tanpa Kategori",
+                "description": "Menú Sin Categorías",
                 "rowId": `${_p}? tanpakategori`
               }],
               "title": "─────「 23 」"
             }, {
               "rows": [{
                 "title":  `Owner Menu`,
-                "description": "Menu Khusus Owner",
+                "description": "Menú especial del Owner",
                 "rowId": `${_p}? owner`
               }],
               "title": "─────「 24 」"
