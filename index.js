@@ -59,7 +59,7 @@ function start(file) {
   })
   p.on('exit', (_, code) => {
     isRunning = false
-    console.error('Exited with code:', code)
+    console.error('❎ㅤOcurrio un error inesperado:', code)
     if (code === 0) return
     watchFile(args[0], () => {
       unwatchFile(args[0])
