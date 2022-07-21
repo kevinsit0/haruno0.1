@@ -449,19 +449,19 @@ function clockString(ms) {
 }
 
 function ucapan() {
-  const time = moment.tz('América\Guayaquil').format('HH')
-  let res = "buenos dias"
+  const time = moment.tz('America/Los_Angeles').format('HH')
+  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
   if (time >= 4) { 
-    res = "hola!"
+    res = "🌇 *Buenos Días | Good Morning* ⛅"
   }
   if (time > 10) {
-    res = "buenas tardes!"
+    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
   }
   if (time >= 15) {
-    res = "buenas tardes!"
+    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
   }
   if (time >= 18) {
-    res = "buenas noches!"
+    res = "🌃 *Buenas noches | Good Evening* 💫"
   }
   return res
 }
