@@ -4,7 +4,7 @@ import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper';
 let handler = async(m, { conn, usedPrefix, text, command, args }) => {
     let user = m.sender
     let name = conn.getName(user)
-    if (!text) throw `Por favor ingrese una consulta!\n\nContoh: ${usedPrefix + command} Bad Bunny`
+    if (!text) throw `Por favor ingrese una consulta!\n\nEjemplo: ${usedPrefix + command} Bad Bunny`
     let results = await yts(text)
     let vid = results.all.find(video => video.seconds < 3600)
     if (!vid) throw 'Konten Tidak ditemukan'
