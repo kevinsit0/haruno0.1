@@ -349,8 +349,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
           ]
           const listMessage = {
             title: `${ucapan()}, ${name}`.trim(),
-            text: "_la siguientees una lista del menu._",
-            buttonText: "Click Here",
+            text: "_la siguiente es una lista del menu._",
+            buttonText: "MENU",
             sections
         }
         await conn.sendMessage(m.chat, listMessage, { quoted: m})
